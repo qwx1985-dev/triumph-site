@@ -162,3 +162,6 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-of
 }
 .hero .wrap > *, .feats > *, .prices > *, .steps > *, .pay > *, .contact > * { min-width: 0; }
 body { overflow-x: clip; }
+.menu .phone { color: var(--fg); font-weight: 600; white-space: nowrap; }
+@media (max-width: 960px) { .menu a.phone { display: inline; } }
+@media (max-width: 560px) { .menu .btn { display: none; } }
