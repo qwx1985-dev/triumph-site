@@ -2,91 +2,260 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ООО «ТРИУМФ»</title>
-<meta name="description" content="ООО «ТРИУМФ»: услуги, цены, оплата банковской картой, реквизиты.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Триумф: разработка сайтов</title>
+<meta name="description" content="ООО «ТРИУМФ»: разработка сайтов и программ в Москве. Фиксированные цены, договор и онлайн-оплата картой.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
 <link rel="stylesheet" href="style.css">
+<style>
+  .f-surface { fill: var(--surface); } .f-tint { fill: var(--tint); } .f-line { fill: var(--line); }
+  .f-fg { fill: var(--fg); } .f-accent { fill: var(--accent); } .f-gold { fill: var(--gold); } .f-muted { fill: var(--muted); }
+  .s-accent { stroke: var(--accent); } .s-gold { stroke: var(--gold); } .s-onaccent { stroke: var(--accent-fg); }
+  .feat svg * { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+</style>
 </head>
 <body>
-<header>
+
+<header class="top">
   <div class="wrap">
-    <a class="logo" href="index.html">ООО «ТРИУМФ»</a>
-    <nav>
+    <a class="brand" href="index.html">
+      <img src="logo.svg" alt="" width="40" height="40">
+      <span><b>ТРИУМФ</b><small>студия разработки</small></span>
+    </a>
+    <nav class="menu">
       <a href="#services">Услуги и цены</a>
+      <a href="#process">Как работаем</a>
       <a href="#payment">Оплата</a>
       <a href="#contacts">Контакты</a>
+      <a class="btn small" href="#services">Заказать</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="hero">
-    <h1>ООО «ТРИУМФ»</h1>
-    <p>Разработка программного обеспечения и IT-услуги для частных клиентов и компаний.</p>
-  </div>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Москва · с 2018 года</p>
+        <h1>Сайты и программы, которые <em>приносят заявки</em></h1>
+        <p class="lead">Делаем лендинги, сайты-визитки и доработки для частных клиентов и небольших компаний. Фиксированная цена до старта, понятные сроки, договор и онлайн-оплата картой.</p>
+        <div class="actions">
+          <a class="btn" href="#services">Выбрать услугу</a>
+          <a class="btn ghost" href="#process">Как мы работаем</a>
+        </div>
+        <ul class="facts">
+          <li><b>от 7 дней</b><span>срок запуска лендинга</span></li>
+          <li><b>фикс</b><span>цена до начала работ</span></li>
+          <li><b>54-ФЗ</b><span>кассовый чек на e-mail</span></li>
+        </ul>
+      </div>
 
-  <section id="services">
-    <h2>Услуги и цены</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Консультация по IT-проекту</h3>
-        <p>Разбор задачи, оценка сроков и бюджета, рекомендации по технологиям. Онлайн, 1 час.</p>
-        <div class="price">3 000 ₽</div>
-      </div>
-      <div class="card">
-        <h3>Разработка лендинга</h3>
-        <p>Одностраничный сайт: структура, дизайн, вёрстка под телефон и компьютер, форма заявки. Срок до 7 рабочих дней.</p>
-        <div class="price">25 000 ₽</div>
-      </div>
-      <div class="card">
-        <h3>Сайт-визитка</h3>
-        <p>Сайт до 5 страниц: дизайн, вёрстка, наполнение по вашим материалам, подключение к хостингу. Срок до 14 рабочих дней.</p>
-        <div class="price">45 000 ₽</div>
-      </div>
-      <div class="card">
-        <h3>Доработка и поддержка</h3>
-        <p>Исправление ошибок, правки текстов и разделов, обновления, мелкие доработки. Оплата за 1 час работы.</p>
-        <div class="price">2 500 ₽</div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+          <circle class="f-tint" cx="470" cy="90" r="80"/>
+          <circle class="f-tint" cx="70" cy="370" r="60"/>
+          <!-- окно браузера -->
+          <rect class="f-line" x="34" y="48" width="400" height="290" rx="18"/>
+          <rect class="f-surface" x="36" y="50" width="396" height="286" rx="16"/>
+          <rect class="f-tint" x="36" y="50" width="396" height="38" rx="16"/>
+          <rect class="f-tint" x="36" y="72" width="396" height="16"/>
+          <circle class="f-gold" cx="60" cy="69" r="5"/><circle class="f-line" cx="78" cy="69" r="5"/><circle class="f-line" cx="96" cy="69" r="5"/>
+          <rect class="f-surface" x="120" y="61" width="220" height="16" rx="8"/>
+          <rect class="f-fg" x="62" y="110" width="168" height="18" rx="5"/>
+          <rect class="f-line" x="62" y="138" width="200" height="9" rx="4"/>
+          <rect class="f-line" x="62" y="154" width="170" height="9" rx="4"/>
+          <rect class="f-accent" x="62" y="176" width="104" height="30" rx="15"/>
+          <rect class="f-tint" x="282" y="108" width="126" height="98" rx="12"/>
+          <path class="f-accent" opacity=".55" d="M296 192l26-30 22 20 20-32 36 42z"/>
+          <circle class="f-gold" cx="384" cy="130" r="11"/>
+          <rect class="f-tint" x="62" y="226" width="104" height="88" rx="12"/>
+          <rect class="f-tint" x="182" y="226" width="104" height="88" rx="12"/>
+          <rect class="f-tint" x="302" y="226" width="104" height="88" rx="12"/>
+          <rect class="f-accent" x="76" y="240" width="26" height="26" rx="8"/>
+          <rect class="f-gold" x="196" y="240" width="26" height="26" rx="8"/>
+          <rect class="f-accent" opacity=".6" x="316" y="240" width="26" height="26" rx="8"/>
+          <rect class="f-line" x="76" y="278" width="72" height="7" rx="3"/><rect class="f-line" x="76" y="292" width="50" height="7" rx="3"/>
+          <rect class="f-line" x="196" y="278" width="72" height="7" rx="3"/><rect class="f-line" x="196" y="292" width="50" height="7" rx="3"/>
+          <rect class="f-line" x="316" y="278" width="72" height="7" rx="3"/><rect class="f-line" x="316" y="292" width="50" height="7" rx="3"/>
+          <!-- телефон с оплатой -->
+          <rect class="f-fg" x="392" y="176" width="132" height="236" rx="22"/>
+          <rect class="f-surface" x="400" y="186" width="116" height="216" rx="15"/>
+          <rect class="f-fg" x="438" y="192" width="40" height="6" rx="3"/>
+          <rect class="f-muted" opacity=".5" x="414" y="214" width="56" height="7" rx="3"/>
+          <rect class="f-fg" x="414" y="228" width="80" height="14" rx="4"/>
+          <rect class="f-tint" x="414" y="254" width="88" height="54" rx="9"/>
+          <rect class="f-gold" x="424" y="264" width="20" height="14" rx="3"/>
+          <rect class="f-line" x="424" y="290" width="66" height="6" rx="3"/>
+          <rect class="f-line" x="414" y="318" width="88" height="6" rx="3"/>
+          <rect class="f-line" x="414" y="330" width="70" height="6" rx="3"/>
+          <rect class="f-accent" x="414" y="356" width="88" height="30" rx="15"/>
+          <path class="s-onaccent" d="M446 371l6 6 12-12" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- значок кода -->
+          <rect class="f-line" x="6" y="238" width="104" height="62" rx="14"/>
+          <rect class="f-surface" x="8" y="240" width="100" height="58" rx="13"/>
+          <path class="s-accent" d="M34 257l-11 12 11 12M82 257l11 12-11 12" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="s-gold" d="M64 253l-12 32" stroke-width="4" stroke-linecap="round"/>
+        </svg>
       </div>
     </div>
-    <p>Цены указаны в рублях и являются окончательными.</p>
   </section>
 
-  <section id="order">
-    <h2>Как заказать</h2>
-    <ol>
-      <li>Выберите услугу и опишите задачу.</li>
-      <li>Мы согласуем объём работ, срок и стоимость и пришлём ссылку на оплату.</li>
-      <li>После оплаты приступаем к работе. Результат передаём в электронном виде на ваш e-mail или в согласованном формате.</li>
-    </ol>
-    <p>Услуги оказываются дистанционно, физическая доставка не требуется.</p>
+  <section class="sec tint">
+    <div class="wrap">
+      <h2>Почему с нами спокойно</h2>
+      <p class="sub">Небольшая команда, которая отвечает за результат. Всё фиксируем на берегу: состав работ, срок и стоимость.</p>
+      <div class="feats">
+        <div class="feat">
+          <svg viewBox="0 0 36 36"><rect x="6" y="5" width="24" height="26" rx="3"/><path d="M11 13h14M11 19h14M11 25h8"/></svg>
+          <h3>Договор и чек</h3>
+          <p>Работаем по публичной оферте, после оплаты присылаем кассовый чек.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="12"/><path d="M18 11v7l5 3"/></svg>
+          <h3>Сроки в днях</h3>
+          <p>Называем срок в рабочих днях до старта и держим его.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 36 36"><rect x="9" y="4" width="18" height="28" rx="3"/><path d="M15 27h6"/></svg>
+          <h3>Под телефон</h3>
+          <p>Каждый сайт верстаем под телефон, планшет и компьютер.</p>
+        </div>
+        <div class="feat">
+          <svg viewBox="0 0 36 36"><path d="M8 19l6 6 14-14"/></svg>
+          <h3>Правки включены</h3>
+          <p>Два круга правок входят в стоимость любой услуги.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="payment">
-    <h2>Оплата</h2>
-    <p>Оплата принимается банковскими картами МИР, Visa, Mastercard и через Систему быстрых платежей. Платёж проходит на защищённой странице банка-эквайера: данные карты передаются по протоколу TLS и не попадают к нам. Для подтверждения оплаты может потребоваться код 3-D Secure от вашего банка.</p>
-    <p>После оплаты на ваш e-mail приходит электронный кассовый чек в соответствии с 54-ФЗ.</p>
-    <h2>Возврат</h2>
-    <p>Если услуга не оказана, вы можете отказаться от неё и получить деньги обратно. Если работа выполнена частично, возвращается сумма за вычетом фактически понесённых расходов. Для возврата направьте заявление по адресу организации, указав дату и сумму платежа. Возврат производится на ту же карту в течение 10 рабочих дней с момента получения заявления; срок зачисления зависит от банка, выпустившего карту. Подробно условия описаны в <a href="oferta.html">договоре оферты</a>.</p>
+  <section class="sec" id="services">
+    <div class="wrap">
+      <h2>Услуги и цены</h2>
+      <p class="sub">Цены окончательные, без скрытых доплат. Оплатить можно банковской картой прямо на сайте после согласования задачи.</p>
+      <div class="prices">
+        <article class="plan">
+          <h3>Консультация по проекту</h3>
+          <div class="cost">3 000 ₽</div>
+          <div class="term">1 час, онлайн</div>
+          <ul>
+            <li>разбор задачи и целей</li>
+            <li>оценка сроков и бюджета</li>
+            <li>рекомендации по технологиям</li>
+          </ul>
+          <a class="btn ghost small" href="#contacts">Заказать</a>
+        </article>
+        <article class="plan">
+          <h3>Лендинг</h3>
+          <div class="cost">25 000 ₽</div>
+          <div class="term">до 7 рабочих дней</div>
+          <ul>
+            <li>структура и тексты блоков</li>
+            <li>дизайн и адаптивная вёрстка</li>
+            <li>форма заявки, подключение домена</li>
+          </ul>
+          <a class="btn ghost small" href="#contacts">Заказать</a>
+        </article>
+        <article class="plan hit">
+          <span class="tag">Чаще всего берут</span>
+          <h3>Сайт-визитка</h3>
+          <div class="cost">45 000 ₽</div>
+          <div class="term">до 14 рабочих дней</div>
+          <ul>
+            <li>до 5 страниц</li>
+            <li>дизайн, вёрстка, наполнение</li>
+            <li>размещение на хостинге</li>
+          </ul>
+          <a class="btn small" href="#contacts">Заказать</a>
+        </article>
+        <article class="plan">
+          <h3>Доработка и поддержка</h3>
+          <div class="cost">2 500 ₽ <small>/ час</small></div>
+          <div class="term">от 1 часа</div>
+          <ul>
+            <li>исправление ошибок</li>
+            <li>новые разделы и блоки</li>
+            <li>обновления и правки текстов</li>
+          </ul>
+          <a class="btn ghost small" href="#contacts">Заказать</a>
+        </article>
+      </div>
+      <p class="note">Услуги оказываются дистанционно, результат передаётся в электронном виде. Физическая доставка не требуется.</p>
+    </div>
   </section>
 
-  <section id="contacts">
-    <h2>Контакты и реквизиты</h2>
-    <table>
-      <tr><td>Полное наименование</td><td>Общество с ограниченной ответственностью «ТРИУМФ»</td></tr>
-      <tr><td>ИНН / КПП</td><td>9701104974 / 770701001</td></tr>
-      <tr><td>ОГРН</td><td>1187746378071</td></tr>
-      <tr><td>Юридический и фактический адрес</td><td>127051, г. Москва, Средний Каретный пер., д. 4, стр. 1, помещ. III, ком. 13</td></tr>
-      <tr><td>Генеральный директор</td><td>Григорян Артур Питменович</td></tr>
-      <tr><td>Режим работы</td><td>пн-пт, 10:00-19:00 (МСК)</td></tr>
-    </table>
+  <section class="sec tint" id="process">
+    <div class="wrap">
+      <h2>Как мы работаем</h2>
+      <p class="sub">Четыре шага от заявки до готового результата.</p>
+      <ol class="steps">
+        <li><h3>Заявка</h3><p>Вы выбираете услугу и описываете задачу.</p></li>
+        <li><h3>Согласование</h3><p>Уточняем объём, фиксируем срок и цену, присылаем ссылку на оплату.</p></li>
+        <li><h3>Работа</h3><p>После оплаты приступаем и показываем промежуточный результат.</p></li>
+        <li><h3>Сдача</h3><p>Передаём готовую работу, вносим правки и закрываем заказ.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="payment">
+    <div class="wrap pay">
+      <div>
+        <h2>Оплата</h2>
+        <p>Оплата принимается банковскими картами и через Систему быстрых платежей. Платёж проходит на защищённой странице банка: данные карты передаются по протоколу TLS и не попадают к нам. Для подтверждения может потребоваться код 3-D Secure от вашего банка.</p>
+        <p>После оплаты на ваш e-mail приходит электронный кассовый чек.</p>
+        <div class="cards"><span>МИР</span><span>VISA</span><span>Mastercard</span><span>СБП</span></div>
+      </div>
+      <div>
+        <h3>Возврат денег</h3>
+        <p>Если услуга ещё не оказана, вы можете отказаться от неё и получить деньги обратно. Если работа выполнена частично, возвращаем сумму за вычетом фактически понесённых расходов.</p>
+        <p>Для возврата направьте заявление по адресу компании, указав дату и сумму платежа. Деньги вернутся на ту же карту в течение 10 рабочих дней; срок зачисления зависит от вашего банка. Подробно в <a href="oferta.html">договоре оферты</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="contacts">
+    <div class="wrap">
+      <h2>Контакты и реквизиты</h2>
+      <p class="sub">Офис в центре Москвы, рядом с садом «Эрмитаж».</p>
+      <div class="contact">
+        <div class="req">
+          <dl>
+            <div><dt>Компания</dt><dd>Общество с ограниченной ответственностью «ТРИУМФ»</dd></div>
+            <div><dt>Адрес</dt><dd>127051, г. Москва, Средний Каретный пер., д. 4, стр. 1, помещ. III, ком. 13</dd></div>
+            <div><dt>Режим работы</dt><dd>пн-пт, 10:00-19:00 (МСК)</dd></div>
+            <div><dt>ИНН / КПП</dt><dd class="num">9701104974 / 770701001</dd></div>
+            <div><dt>ОГРН</dt><dd class="num">1187746378071</dd></div>
+            <div><dt>Генеральный директор</dt><dd>Григорян Артур Питменович</dd></div>
+          </dl>
+        </div>
+        <div class="map">
+          <iframe title="Карта: Средний Каретный переулок, 4с1" loading="lazy"
+            src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9%20%D0%9A%D0%B0%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA%2C%204%D1%811&amp;z=16"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>Обсудим ваш проект?</h2>
+          <p>Начните с консультации: за час разберём задачу и назовём точную цену.</p>
+        </div>
+        <a class="btn" href="#services">Выбрать услугу</a>
+      </div>
+    </div>
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="wrap">
-    ООО «ТРИУМФ», ИНН 9701104974, ОГРН 1187746378071<br>
-    <a href="oferta.html">Договор оферты</a> · <a href="privacy.html">Политика обработки персональных данных</a>
+    <div>© 2026 ООО «ТРИУМФ» · ИНН 9701104974 · ОГРН 1187746378071</div>
+    <nav><a href="oferta.html">Договор оферты</a><a href="privacy.html">Политика обработки персональных данных</a></nav>
   </div>
 </footer>
 </body>
